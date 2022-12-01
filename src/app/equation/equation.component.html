@@ -1,1 +1,20 @@
-<p>equation works!</p>
+<form [formGroup]="mathForm">
+
+{{a}} + {{b}} = 
+    
+</form>
+
+
+
+<!-- some debug  -->
+<hr>
+<div>
+    form is valid {{mathForm.valid}}
+</div>
+<div>
+    form value {{a}} + {{b}} + {{mathForm.value.answer}}
+</div>
+<div>
+    form error {{mathForm.errors}}
+</div>
+
