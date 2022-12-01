@@ -1,6 +1,7 @@
 <form [formGroup]="mathForm">
 
 {{a}} + {{b}} = 
+<input formControlName="answer"  />
     
 </form>
 
@@ -15,6 +16,6 @@
     form value {{a}} + {{b}} + {{mathForm.value.answer}}
 </div>
 <div>
-    form error {{mathForm.errors}}
+    form error  addition: {{mathForm.errors.addition}}
 </div>
 
