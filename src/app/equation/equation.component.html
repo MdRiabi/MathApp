@@ -1,12 +1,12 @@
 <form [formGroup]="mathForm">
+    <div class="equation">{{a}} + {{b}} = </div>
 
-{{a}} + {{b}} = 
-<input formControlName="answer"  />
-    
+    <input formControlName="answer" />
+
 </form>
 
+<div class="stats">{{ secondPersolution | number: '1.1-3' }}</div>
 
-{{  secondPersolution | number: '1.1-3'  }}
 
 
 <!-- some debug  -->
@@ -18,6 +18,5 @@
     form value {{a}} + {{b}} + {{mathForm.value.answer}}
 </div>
 <div>
-    form error  addition: {{mathForm.errors.addition}}
+    form error addition: {{mathForm.errors.addition}}
 </div>
-

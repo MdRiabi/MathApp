@@ -38,7 +38,7 @@ export class EquationComponent implements OnInit {
         }
       },  {numberSolved: 0 , startTime: new Date()}) 
     ).subscribe(( {numberSolved , startTime} ) => {
-
+      
       console.log(` and the value of numbersolved is ${numberSolved}`);
 
       this.secondPersolution =
